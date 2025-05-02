@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Craft Studio | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffe1;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .btn {
+      margin-top: 1.5rem;
+      background-color: #00ffe1;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover { background-color: #00ccbb; }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #00ffe1;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+    .card p {
+      padding: 1rem;
+    }
+    .skills, .services, .testimonials {
+      margin-top: 2rem;
+    }
+    .skills ul, .services ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .skills li::before, .services li::before {
+      content: "✓ ";
+      color: #00ffe1;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+    a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <img src="logo.png" alt="Pixel Craft Studio Logo">
+    <h1>Pixel Craft Studio</h1>
+    <p>Graphic Designer & Video Editor</p>
+    <a href="#portfolio" class="btn">View My Work</a>
+  </header>
+
+  <section id="about" data-aos="fade-right">
+    <h2 class="section-title">About Me</h2>
+    <p>I create eye-catching reels, logo animations, and brand visuals that make content stand out. I specialize in After Effects, Photoshop, Premiere Pro, and Canva. My mission is to turn ideas into visual stories that engage and convert.</p>
+  </section>
+
+  <section class="skills" data-aos="fade-left">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li>Adobe After Effects & Premiere Pro</li>
+      <li>Adobe Photoshop & Illustrator</li>
+      <li>Motion Graphics & VFX</li>
+      <li>Social Media Video Editing</li>
+      <li>Brand Identity Design</li>
+       <li>Graphic Designers </li>
+    </ul>
+  </section>
+
+  <section class="services" data-aos="fade-right">
+    <h2 class="section-title">Services</h2>
+    <ul>
+      <li>Logo Animation</li>
+      <li>Instagram Reels & Shorts Editing</li>
+      <li>Poster & Ad Design</li>
+      <li>Intro/Outro Videos</li>
+      <li>Brand Visual Strategy</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" data-aos="fade-up">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Poster+Design" alt="Poster">
+        <p>Perfume Ad Design – Bold, minimal product layout.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Video+Edit" alt="Edit">
+        <p>Instagram Reel Edit – Smooth transitions with motion graphics.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Logo+Reveal" alt="Logo">
+        <p>Logo Animation – Quick, sharp identity reveal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" data-aos="fade-left">
+    <h2 class="section-title">Client Feedback</h2>
+    <p>⭐ “Pixel Craft Studio transformed our branding with stunning visuals.” – Client A</p>
+    <p>⭐ “Excellent editing, timely delivery, and creative excellence.” – Client B</p>
+  </section>
+
+  <section id="contact" data-aos="fade-left">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:pixcrft.studio@gmail.com">pixcrft.studio@gmail.com</a></p>
+    <p>Instagram: <a href=https://www.instagram.com/pixelcraft.studio_/profilecard/?igsh=N291ZHp6NGx6aGNw>@pixelcraft.studio_</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Pixel Craft Studio. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
